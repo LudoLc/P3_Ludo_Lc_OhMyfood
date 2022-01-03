@@ -1,0 +1,276 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$text:'Roboto', sans-serif;
+$size24: 24px;
+$size20: 20px;
+$font-weight:bold;
+$white:white;
+
+
+@mixin display-center {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin text
+{
+    font-family: $text;
+    font-weight: $font-weight;
+    font-size: $size24;
+}
+
+@mixin cards-restaurant
+{
+
+    width: 335px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+@mixin description-cards-menu
+{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 335px;
+    box-shadow: 2px 2px 2px 2px rgba(203,203,203,0.35);
+}
+
+h3
+{
+    padding-left: -10px;
+    margin:0;
+}
+
+p
+{
+    font-family: $text;
+    font-size: $size20;
+    
+}
+
+.menu-text
+{
+    @include text;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+
+
+.logo-oh-my-food {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            padding-top: 6px;
+            padding-bottom: 6px;
+  }
+  
+  .img-logo {
+    padding: 15px;
+    width: 160px;
+    height: 25px;
+  }
+  
+.menu
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2; 
+    gap:5px;  
+}
+
+  .menu-general 
+  {
+    background-color: #eaeaea;
+    font-size: $size24;
+    width: 100%;
+  }
+
+.geoloc-menu
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+}  
+
+.text-city
+{
+    padding-left:10px;
+    font-size: $size20;
+    font-weight:bold;
+    font-family: $text;
+    margin-right: 20px;
+    
+}
+
+.explorez-restaurants
+{
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $text;    
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(203,203,203,0.35);
+}
+.explorez-restaurants:hover
+{
+    cursor: pointer;
+}
+
+.function-text
+{
+    
+    @include text;
+    padding:28px 0 20px 20px;
+    margin-bottom: auto;
+}
+
+.rubrique-fonctionnement
+{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding-bottom: 60px;
+}
+
+.logo-1
+{   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+}
+
+.logo-2
+{   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    align-items: center;
+}
+
+.logo-3
+{   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    align-items: center;
+}
+
+
+.choisir-restaurant
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: #f2f2f2;
+    width: 335px;
+    height:75px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+}
+
+.choisir-restaurant:hover
+{
+    cursor: pointer;
+    background-color: #f5edff; 
+}
+
+
+.liste-restaurant
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: #f2f2f2;
+    gap: 20px
+}
+
+.title-restaurants
+{
+    @include text;
+    padding-left: 20px;
+}
+
+.img-cards
+{
+    @include cards-restaurant;
+}
+
+.coeur-card:before
+{
+    content:"";
+    transition: 0.5s;
+    opacity: 1;
+    background-image:linear-gradient(#FF79DA,#9356DC);  
+}
+
+
+
+
+.texte-description
+{
+    @include description-cards-menu;
+    background-color: white;
+
+}
+
+.carte-restaurants
+{
+    margin: 5%;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.description-restau
+{
+    padding-bottom: 10px;
+}
