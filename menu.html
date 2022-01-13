@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="style.scss">
     <script src="https://kit.fontawesome.com/1225905c8a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>Oh my Food</title>
 
 </head>
+<body>
+    <div class="img-loading">
+        <img class="img-load" src="./restaurant.svg"/>
+        </div>
+        <div class="main-text">
     <section> 
+
     <div class="logo-oh-my-food">
         <img class="img-logo" src="imagesmenu/ohmyfood.png"/>
     </div>
@@ -19,7 +26,7 @@
     <div class="menu-general">
         <div class="menu-loc-city">
         <label class="geoloc-menu">
-            <i class="fas fa-map-marker-alt fa-lg map-icon"></i>
+            <i class="fas fa-map-marker-alt fa-sm map-icon"></i>
             <p class="text-city">Paris, Belleville</p>
         </label>
         </div>
@@ -27,8 +34,8 @@
 
 
         <h2 class="menu-text">Reservez le menu qui vous convient</h2>
-        <p class="texte-restau-menu">Découvrez les restautant d'exception, séléectionnés par nos soins</p>
-        <div class="explorez-restaurants">Explorer nos restaurants</div>
+        <p class="texte-restau-menu">Découvrez les restautant d'exception, sélectionnés par nos soins</p>
+        <a  class="link-liste" href="#liste-restaurant"><div class="explorez-restaurants">Explorer nos restaurants</div></a>
         </div>
     </section>
 
@@ -59,65 +66,69 @@
         </div>
     </section>
 
-    <section class="liste-restaurant">
+    <section id="liste-restaurant">
         <h2 class="title-restaurants">Restaurants</h2>
         <div class="carte-restaurants">
             <img class ="img-cards" src="imagesmenu/first.jpg">
             <div class="texte-description">
                 <span class="description-restau"><h3>La palette du goût</h3>Ménilmontant</span>
-                <i class="far fa-heart fa-lg coeur-card"></i>               
+                <div class="button-heart">
+                <a href="palette.html"><i class="fas fa-heart fa-lg"></i></a>
+                </div>
+                <div class="nouveau">Nouveau</div>               
             </div>        
         </div>
 
         <div class="carte-restaurants">
             <img class ="img-cards" src="imagesmenu/second.jpg">
             <div class="texte-description">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-                Logo fontawesome
-            </div>        
-        </div>
+                <span class="description-restau"><h3>La note enchantée</h3>Charonne</span>
+                <a href="note-enchantee.html"><i class="fas fa-heart fa-lg"></i></a>
+                <div class="nouveau">Nouveau</div>               
+            </div> 
+        </div>       
 
         <div class="carte-restaurants">
             <img class ="img-cards" src="imagesmenu/third.jpg">
             <div class="texte-description">
-                <h3>A la francaise</h3>
-                <p>Cité Rouge</p>
-                Logo fontawesome
+                <span class="description-restau"><h3>À la française</h3>Cité Rouge</span>
+                <a href="a-la-francaise.html"><i class="fas fa-heart fa-lg"></i></a>          
             </div>        
         </div>
 
         <div class="carte-restaurants">
             <img class ="img-cards" src="imagesmenu/fourth.jpg">
             <div class="texte-description">
-                <h3>Le délice des sens </h3>
-                <p>Folie-Méricourt</p>
-                Logo fontawesome
+                <span class="description-restau"><h3>La délice des sens</h3>Folie Mélancourt</span>
+                <a href="delice-des-sens.html"><i class="fas fa-heart fa-lg"></i></a>            
             </div>        
         </div>
-
+        
     </section>
 
-    
-        Image logo oh my food
-        <div class="footer-avec-logo">
-            Image fourchette
-            <p>Proposer un restaurant</p>
+    <footer>
+        <img class="img-logo-footer" src="imagesmenu/ohmyfoodwhite"/>        
+        <div class="menu-footer">
+            <a href="#" class="footer-logo">
+                <i class="fas fa-utensils knife-logo"></i>
+                Proposer un restaurant
+            </a>    
+
+            <a href="#" class="footer-logo">
+                <i class="fas fa-hands-helping hands-logo"></i>
+                Devenir partenaire
+            </a>
+
+                <a href="#" class="footer-logo">
+                    Mentions légales
+                </a>
+
+                <a href="mailto:someone@yoursite.com" class="footer-logo" target="_blank" rel="noopener noreferrer">
+                    Contact
+                </a>
         </div>
-
-        <div class="footer-avec-logo">
-            Image fourchette
-            <p>Proposer un restaurant</p>
-        </div>
-
-        <ul>
-            <li>Mentions légales</li>
-            <li>Contact</li>
-        </ul>
-        
-
     </footer>
-    
+    </div>
 </body>
 </html>
 
