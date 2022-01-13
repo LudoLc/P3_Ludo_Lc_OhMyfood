@@ -137,7 +137,7 @@ $white:white;
         opacity: 1;
         }
     }
-    
+
 
 
 
@@ -180,6 +180,60 @@ p
     width: 160px;
     height: 25px;
 }
+
+
+/* animation css horizontal */
+
+.menu-entree
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-entree :nth-child(1)
+{
+    animation-delay: 0s;
+}
+
+.menu-entree :nth-child(2)
+{
+    animation-delay: 0.25s;
+    
+}
+
+.menu-entree :nth-child(3)
+{
+    animation-delay: 0.5s;
+    
+}
+
+.texte-description-palette
+{
+    height: 68px;
+    animation: slide 1s ease-in-out forwards;
+    animation-delay: 1s;
+    transform:translateY(20px);
+    opacity:0;
+}
+
+
+
+@keyframes slide {
+
+    0%{
+        transform:translateY(20px);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+/* fin animation css horizontal */ 
 
 .menu
 {
@@ -275,6 +329,11 @@ a {
     bottom: 110px;
 }
 
+.phone-logo:hover
+{
+    color: #9356DC;
+}
+
 .logo-2
 {   
     display: flex;
@@ -290,6 +349,11 @@ a {
     align-items: center;
 }
 
+.store-logo:hover
+{
+    color: #9356DC;
+}
+
 .logo-3
 {   
     display: flex;
@@ -303,6 +367,11 @@ a {
     position: absolute;
     left: 20px;
     align-items: center;
+}
+
+.bar-logo:hover
+{
+    color: #9356DC;
 }
 
 
@@ -399,6 +468,7 @@ a {
     box-shadow: 1px 1px 1px 1px rgba(203,203,203,0.15);
 
 }
+
 
 .description-restau
 {
@@ -567,10 +637,6 @@ footer{
     text-overflow: ellipsis;
 }
 
-.texte-description-palette
-{
-    height: 68px;
-}
 
 .prix
 {

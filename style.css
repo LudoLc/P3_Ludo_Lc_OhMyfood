@@ -159,6 +159,65 @@ p {
   height: 25px;
 }
 
+/* animation css horizontal */
+.menu-entree {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-entree :nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.menu-entree :nth-child(2) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.menu-entree :nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.texte-description-palette {
+  height: 68px;
+  -webkit-animation: slide 1s ease-in-out forwards;
+          animation: slide 1s ease-in-out forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* fin animation css horizontal */
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,6 +335,10 @@ a {
   bottom: 110px;
 }
 
+.phone-logo:hover {
+  color: #9356DC;
+}
+
 .logo-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,6 +359,10 @@ a {
           align-items: center;
 }
 
+.store-logo:hover {
+  color: #9356DC;
+}
+
 .logo-3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,6 +381,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.bar-logo:hover {
+  color: #9356DC;
 }
 
 .choisir-restaurant {
@@ -612,10 +683,6 @@ footer {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.texte-description-palette {
-  height: 68px;
 }
 
 .prix {
