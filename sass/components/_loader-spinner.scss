@@ -1,0 +1,16 @@
+.img-loading
+    {
+        width: 0;
+        height: 200px;
+        position: fixed;
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
+        overflow: hidden;
+        display: block;
+        animation: 2s  ease-in-out 1s  loading  forwards, 1s linear 3s fade-out forwards;
+    }
+    
+    .img-load {
+        height: 200px;
+        width: 200px;
+    }

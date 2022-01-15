@@ -1,0 +1,29 @@
+h3
+{
+    padding-left: 10px;
+    margin:0;
+}
+
+p
+{
+    font-family: $text;
+    font-size: $size20;
+}
+
+.header-palette
+{
+    padding-bottom: 7px;
+}
+
+.logo-oh-my-food-palette
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+}

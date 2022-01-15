@@ -1,0 +1,122 @@
+@mixin display-center {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin text
+{
+    font-family: $text;
+    font-weight: $font-weight;
+    font-size: $size24;
+}
+
+@mixin cards-restaurant
+{
+
+    width: 335px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+@mixin description-cards-menu
+{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: white;
+    width: 335px;
+    box-shadow: 2px 2px 2px 2px rgba(203,203,203,0.35);
+}
+
+@mixin palette-entree-menu {
+    background-color: white;
+    border-radius: 14px 14px 14px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 335px;
+    padding-left: 10px;
+    margin-top: 10px;
+    height: 68px;
+    font-family: $text;
+    cursor: pointer;
+}
+
+@mixin border-bot-green
+{
+    background-color: #99e2d0;
+    height: 2px;
+    width: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+@mixin order-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $text;    
+    box-shadow: 2px 2px 2px 2px rgba(203,203,203,0.35);
+    text-decoration: none;
+}
+
+@mixin palette-tittle
+{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 8px
+}
+
+@mixin menu-entree {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin description-texte-restau {
+    font-size: 14px;
+    width: 290px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin price {
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+@mixin logo-footer {
+    width: 100px;
+    height: 18px;
+    padding-top: 26px;
+    padding-left: 22px;
+    padding-bottom: 18px;
+}
+
+@mixin footer-logo {
+    padding-bottom: 7px;
+    padding-left: 6px;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,56 @@
+.menu
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2; 
+}
+
+.menu-general 
+{
+    background-color: #eaeaea;
+    font-size: $size24;
+    width: 100%;
+}
+
+
+
+.border-menu
+{
+    @include   border-bot-green();
+}
+
+.palette-tittle
+{
+    @include palette-tittle()
+}
+
+.entree-palette
+{
+    background-color: #f2f2f2;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -65px;
+}
+
+.img-logo-palette
+{
+    padding: 6px;
+    width: 160px;
+    height: 25px;
+}
+
+.palette-tittle-text
+{
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.palette-img
+{
+    object-fit: cover;
+    width: 375px;
+    height: 285px;
+}

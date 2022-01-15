@@ -1,0 +1,30 @@
+.menu-text
+{
+    @include text;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 36px;
+    margin: 0;
+}
+
+.text-city
+{
+    padding-left:5px;
+    font-size: $size20;
+    font-weight:bold;
+    font-family: $text;
+    margin-right: 20px;
+}
+.function-text
+{
+    @include text;
+    padding:33px 0 20px 20px;
+    margin-bottom: auto;
+}
+
+.title-restaurants
+{
+    @include text;
+    padding-left: 20px;
+    padding-top: 35px
+}

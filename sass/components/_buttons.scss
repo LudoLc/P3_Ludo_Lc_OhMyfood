@@ -1,0 +1,53 @@
+.explorez-restaurants
+{
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $text;    
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(203,203,203,0.35);
+}
+
+.order
+{
+    @include order-button;
+    &:hover
+    {
+        opacity: 0.75;
+    }
+}
+
+.phone-logo:hover
+{
+    color: #9356DC;
+}
+
+.store-logo:hover
+{
+    color: #9356DC;
+}
+
+.bar-logo:hover
+{
+    color: #9356DC;
+}
+
+.logo
+{   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+}
