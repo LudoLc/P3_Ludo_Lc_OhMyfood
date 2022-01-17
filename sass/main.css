@@ -315,6 +315,10 @@ div.main-text {
   opacity: 0.75;
 }
 
+.phone-logo {
+  padding-left: 10px;
+}
+
 .phone-logo:hover {
   color: #9356DC;
 }
@@ -631,6 +635,78 @@ div.main-text {
   height: 285px;
 }
 
+@media screen and (min-width: 390px) {
+  .img-logo-palette {
+    width: 320px;
+    height: 50px;
+  }
+  .palette-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    background-color: white;
+  }
+  .palette-tittle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .palette-img {
+    border-radius: 80px;
+  }
+  .entrees {
+    position: relative;
+    left: 35%;
+  }
+  .entree-palette {
+    background-color: #f2f2f2;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .border-menu {
+    position: relative;
+    left: 35%;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .img-logo-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -680,6 +756,7 @@ footer {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 6px;
+  background-color: #f2f2f2;
 }
 
 .img-logo {
@@ -721,12 +798,116 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (min-width: 500px) {
+  .img-loading {
+    -webkit-animation: 0s;
+            animation: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-fill-mode: none;
+            animation-fill-mode: none;
+  }
+  .img-loading {
+    -webkit-animation: 0s;
+            animation: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-fill-mode: none;
+            animation-fill-mode: none;
+  }
+  div.main-text {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-animation: 0s linear 0s fade-in forwards;
+            animation: 0s linear 0s fade-in forwards;
+  }
+  .function-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rubrique-fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .choisir-restaurant {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30%;
+  }
+  .logo {
+    position: absolute;
+    left: 34.5%;
+  }
+  #liste-restaurant {
+    width: 100%;
+    background-color: #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 6%;
+    margin: auto;
+  }
+  .carte-restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -85px;
+  }
+  .img-logo-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #f2f2f2;
 }
 
 h3 {

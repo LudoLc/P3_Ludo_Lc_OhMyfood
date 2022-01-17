@@ -6,6 +6,7 @@
         -ms-flex-pack: center;
             justify-content: center;
             padding-top: 6px;
+            background-color: #f2f2f2;
 }
 
 .img-logo {
@@ -23,6 +24,7 @@
     align-items: center;
 }  
 
+
 .rubrique-fonctionnement
 {
         display: flex;
@@ -35,4 +37,92 @@
 .explorez-restaurants:hover
 {
     cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+    .img-loading 
+    {
+        animation: 0s;
+        animation-delay: 0s;
+        animation-fill-mode: none;
+        
+    }
+    .img-loading{
+        animation: 0s;
+        animation-delay: 0s;
+        animation-fill-mode: none;
+    }
+
+    div.main-text {
+        visibility: hidden;
+        opacity: 0;
+        animation: 0s linear 0s fade-in forwards;
+    }
+
+    .function-text
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rubrique-fonctionnement
+    {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .choisir-restaurant
+    {
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 30%;
+    }
+
+    .logo{
+        position: absolute;
+        left: 34.5%;
+    }
+
+    #liste-restaurant
+    {
+        
+        width:100%;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 6%;
+        margin: auto;
+    }
+
+    .title-restaurants
+    {
+        
+    }
+
+    .carte-restaurants
+    {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -85px;
+    }
+
+    .img-logo-footer
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
