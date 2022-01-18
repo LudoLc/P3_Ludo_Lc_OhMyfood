@@ -38,7 +38,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    width: 335px;
+    width: 100%;
     padding-left: 10px;
     margin-top: 10px;
     height: 68px;
@@ -84,12 +84,14 @@
 @mixin menu-entree {
     display: flex;
     flex-direction: column;
-    width: 340px;
     margin: auto;
     margin-bottom: 20px;
     align-items: center;
     gap: 14px;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    align-items: stretch;
+
 }
 
 @mixin description-texte-restau {

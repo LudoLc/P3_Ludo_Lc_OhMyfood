@@ -25,19 +25,34 @@
     @include palette-tittle()
 }
 
+.dish-general
+{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 335px;
+    justify-content: center;
+    width: 100%;
+}
+
 .entree-palette
 {
+    display: flex;
+    flex-direction: column;
     background-color: #f2f2f2;
     border-radius: 30px 30px 0 0;
     position: relative;
     top: -65px;
+    align-items: center;
 }
 
 .img-logo-palette
 {
     padding: 6px;
     width: 160px;
-    height: 25px;
+    height: 45px;
 }
 
 
@@ -46,6 +61,7 @@
     font-family: 'Shrikhand', sans-serif;
     font-weight: 500;
     font-size: 30px;
+    padding-right: 20px;
 }
 
 .palette-img
@@ -57,7 +73,10 @@
 
 @media screen and  (min-width: 390px) {
 
-
+    .arrow
+    {
+        padding-left: 40px;
+    }
 
     .img-logo-palette
     {
@@ -84,14 +103,19 @@
 
     .palette-img
     {
-        border-radius: 80px;
+        border-radius: 30px;
+        width: 70%;
     }
 
     .entrees
     {
-        position: relative;
-        left: 35%;
+        margin-left: 30px;
     }
+    .border-menu
+    {
+        margin-left: 35px;
+    }
+    
 
     .entree-palette
     {
@@ -101,14 +125,10 @@
         width: 70%;
         margin: auto;
         margin-top: 80px;
+        align-items: center;
     }
 
-    .border-menu
-    {
-        position: relative;
-        left: 35%;
-    }
-    
+
 
 
 

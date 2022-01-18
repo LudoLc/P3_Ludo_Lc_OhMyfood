@@ -76,6 +76,21 @@
     25px 25px 29px rgba(0, 0, 0, 0.05);
 }
 
+.dish-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+
+.under-text
+{
+    padding-left: 10px;
+}
+
 .nouveau
 {
     background-color: #99E2D0;

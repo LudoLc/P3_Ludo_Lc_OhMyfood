@@ -34,6 +34,13 @@
         background-color: white ;
 }
 
+.backg-restau-liste
+{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+
 .explorez-restaurants:hover
 {
     cursor: pointer;
@@ -78,24 +85,37 @@
         flex-wrap: nowrap;
         align-items: center;
         width: 30%;
+        min-width: 350px;
+        position: relative;
     }
 
     .logo{
         position: absolute;
-        left: 34.5%;
+        left: -8px;
+    }
+
+
+    .title-restaurants
+    {
+        padding: 0;
+        text-align: center;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding-top: 20px;
     }
 
     #liste-restaurant
     {
-        
-        width:100%;
+        width: 100%;
         background-color: #f2f2f2;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding-top: 6%;
+        padding-top: 3%;
         margin: auto;
+        max-width: 800px;
+        gap: 40px;
     }
 
     .title-restaurants
@@ -107,6 +127,7 @@
     {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 20px;
     } 
 
 
@@ -117,7 +138,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: -85px;
+        margin-top: -65px;
     }
 
     .img-logo-footer

@@ -443,7 +443,7 @@ div.main-text {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  width: 335px;
+  width: 100%;
   padding-left: 10px;
   margin-top: 10px;
   height: 68px;
@@ -455,6 +455,26 @@ div.main-text {
   font-family: "Roboto", sans-serif;
   -webkit-box-shadow: 0.7px 0.7px 0.8px rgba(0, 0, 0, 0.014), 1.7px 1.7px 1.9px rgba(0, 0, 0, 0.02), 3.1px 3.1px 3.6px rgba(0, 0, 0, 0.025), 5.6px 5.6px 6.5px rgba(0, 0, 0, 0.03), 10.4px 10.4px 12.1px rgba(0, 0, 0, 0.036), 25px 25px 29px rgba(0, 0, 0, 0.05);
           box-shadow: 0.7px 0.7px 0.8px rgba(0, 0, 0, 0.014), 1.7px 1.7px 1.9px rgba(0, 0, 0, 0.02), 3.1px 3.1px 3.6px rgba(0, 0, 0, 0.025), 5.6px 5.6px 6.5px rgba(0, 0, 0, 0.03), 10.4px 10.4px 12.1px rgba(0, 0, 0, 0.036), 25px 25px 29px rgba(0, 0, 0, 0.05);
+}
+
+.dish-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.under-text {
+  padding-left: 10px;
 }
 
 .nouveau {
@@ -483,7 +503,7 @@ div.main-text {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  width: 335px;
+  width: 100%;
   padding-left: 10px;
   margin-top: 10px;
   height: 68px;
@@ -503,7 +523,6 @@ div.main-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 340px;
   margin: auto;
   margin-bottom: 20px;
   -webkit-box-align: center;
@@ -511,6 +530,10 @@ div.main-text {
           align-items: center;
   gap: 14px;
   font-family: 'Roboto', sans-serif;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .img-cards {
@@ -609,23 +632,49 @@ div.main-text {
   padding-bottom: 8px;
 }
 
+.dish-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 335px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 .entree-palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 30px 30px 0 0;
   position: relative;
   top: -65px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .img-logo-palette {
   padding: 6px;
   width: 160px;
-  height: 25px;
+  height: 45px;
 }
 
 .palette-tittle-text {
   font-family: 'Shrikhand', sans-serif;
   font-weight: 500;
   font-size: 30px;
+  padding-right: 20px;
 }
 
 .palette-img {
@@ -636,6 +685,9 @@ div.main-text {
 }
 
 @media screen and (min-width: 390px) {
+  .arrow {
+    padding-left: 40px;
+  }
   .img-logo-palette {
     width: 320px;
     height: 50px;
@@ -663,11 +715,14 @@ div.main-text {
     gap: 20px;
   }
   .palette-img {
-    border-radius: 80px;
+    border-radius: 30px;
+    width: 70%;
   }
   .entrees {
-    position: relative;
-    left: 35%;
+    margin-left: 30px;
+  }
+  .border-menu {
+    margin-left: 35px;
   }
   .entree-palette {
     background-color: #f2f2f2;
@@ -676,10 +731,9 @@ div.main-text {
     width: 70%;
     margin: auto;
     margin-top: 80px;
-  }
-  .border-menu {
-    position: relative;
-    left: 35%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer {
     display: -webkit-box;
@@ -712,6 +766,7 @@ footer {
   color: white;
   padding-bottom: 37px;
   font-family: 'Roboto', sans-serif;
+  margin-top: -65px;
 }
 
 .menu-footer {
@@ -794,6 +849,11 @@ footer {
   background-color: white;
 }
 
+.backg-restau-liste {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
 .explorez-restaurants:hover {
   cursor: pointer;
 }
@@ -847,10 +907,19 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     width: 30%;
+    min-width: 350px;
+    position: relative;
   }
   .logo {
     position: absolute;
-    left: 34.5%;
+    left: -8px;
+  }
+  .title-restaurants {
+    padding: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding-top: 20px;
   }
   #liste-restaurant {
     width: 100%;
@@ -866,8 +935,10 @@ footer {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 6%;
+    padding-top: 3%;
     margin: auto;
+    max-width: 800px;
+    gap: 40px;
   }
   .carte-restaurants {
     display: -webkit-box;
@@ -875,6 +946,7 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 20px;
   }
   footer {
     display: -webkit-box;
@@ -890,7 +962,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: -85px;
+    margin-top: -65px;
   }
   .img-logo-footer {
     display: -webkit-box;
@@ -939,5 +1011,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=main.css.map */
