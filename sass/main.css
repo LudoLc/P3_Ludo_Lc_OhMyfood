@@ -10,7 +10,7 @@
 }
 
 .text-city {
-  padding-left: 5px;
+  padding-left: 20px;
   font-size: 20px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
@@ -859,28 +859,6 @@ footer {
 }
 
 @media screen and (min-width: 500px) {
-  .img-loading {
-    -webkit-animation: 0s;
-            animation: 0s;
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-    -webkit-animation-fill-mode: none;
-            animation-fill-mode: none;
-  }
-  .img-loading {
-    -webkit-animation: 0s;
-            animation: 0s;
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-    -webkit-animation-fill-mode: none;
-            animation-fill-mode: none;
-  }
-  div.main-text {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-animation: 0s linear 0s fade-in forwards;
-            animation: 0s linear 0s fade-in forwards;
-  }
   .function-text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -984,6 +962,11 @@ body {
 
 h3 {
   padding-left: 10px;
+  margin: 0;
+}
+
+.h3-text {
+  padding-left: 0;
   margin: 0;
 }
 

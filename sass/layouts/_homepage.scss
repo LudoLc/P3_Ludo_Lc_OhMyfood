@@ -47,24 +47,6 @@
 }
 
 @media screen and (min-width: 500px) {
-    .img-loading 
-    {
-        animation: 0s;
-        animation-delay: 0s;
-        animation-fill-mode: none;
-        
-    }
-    .img-loading{
-        animation: 0s;
-        animation-delay: 0s;
-        animation-fill-mode: none;
-    }
-
-    div.main-text {
-        visibility: hidden;
-        opacity: 0;
-        animation: 0s linear 0s fade-in forwards;
-    }
 
     .function-text
     {
@@ -116,11 +98,6 @@
         margin: auto;
         max-width: 800px;
         gap: 40px;
-    }
-
-    .title-restaurants
-    {
-        
     }
 
     .carte-restaurants
